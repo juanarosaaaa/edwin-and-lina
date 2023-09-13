@@ -21,18 +21,18 @@
   "Services": [
     {
       "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Egg Delivery Services",
+      "text": "Enjoy the convenience of fresh, farm-to-table eggs delivered right to your doorstep. Our efficient delivery ensures you have access to the finest quality eggs without leaving your home."
     },
     {
       "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Egg Grading and Packaging",
+      "text": "We meticulously grade and package our eggs, meeting the highest industry standards for quality and safety. Each egg is handled with care to guarantee you receive only the best."
     },
     {
       "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "Bulk Egg Supply for Businesses",
+      "text": "Catering to restaurants, bakeries, and other businesses, we provide bulk egg supply services. Our commitment to consistent quality ensures your culinary creations shine."
     },
     {
       "icon": "fa fa-language",
