@@ -153,11 +153,11 @@ export const Contact = (props) => {
             <a href="" rel="">
               Privacy 
             </a>
-            | {" "}
+             | {" "}
             <a href="">
               Site Terms 
             </a>
-            | All rights reserved.
+             | All rights reserved.
           </p>
         </div>
       </div>
