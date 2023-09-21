@@ -150,13 +150,14 @@ export const Contact = (props) => {
         <div className="container text-center">
           <p>
             &copy; 2023 Edwin and Lina Poultry Farm | {" "}
-            <a href="" rel="">
-              Privacy 
+            <a href="https://www.termsfeed.com/live/faa6288a-ee0a-4264-90a4-3fa54c076c95" rel="">
+              Privacy Policy
             </a>
              | {" "}
-            <a href="">
-              Site Terms 
+            <a href="https://www.termsfeed.com/live/31559517-f0b0-4dc0-8763-18c1afa95c00">
+              Terms and Conditions
             </a>
+            {" "}
              | All rights reserved.
           </p>
         </div>

@@ -20,6 +20,28 @@ const App = () => {
     setLandingPageData(JsonData);
   }, []);
 
+  // Define a function to send the email when needed
+  const sendEmail = async () => {
+    try {
+      // Specify recipient, subject, and text for the email
+      const to = 'recipient@example.com';
+      const subject = 'Hello from Nodemailer';
+      const text = 'This is a test email from Nodemailer.';
+
+      // Call the sendEmail function to send the email
+      await sendEmail(to, subject, text);
+
+      // Continue with other application logic here
+    } catch (error) {
+      console.error('Error in sending email:', error);
+    }
+  };
+
+  // You can call the sendEmail function when needed, for example, in response to a button click
+  const handleSendEmailClick = () => {
+    sendEmail();
+  };
+
   return (
     <div>
       <Navigation />
