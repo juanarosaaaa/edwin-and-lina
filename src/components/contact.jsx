@@ -9,6 +9,8 @@ const initialState = {
 };
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
+  const [notification, setNotification] = useState(null);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,16 +22,23 @@ export const Contact = (props) => {
     e.preventDefault();
     console.log(name, email, message);
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .sendForm("service_4r5u2cv", "template_w968qmf", e.target, "dcbxe3jHiDskFAw-Y")
       .then(
         (result) => {
           console.log(result.text);
           clearState();
+          setNotification({ message: "Email sent successfully!", type: "success" });
         },
         (error) => {
           console.log(error.text);
+          setNotification({ message: "Error sending email. Please try again.", type: "error" });
         }
       );
+
+      // Auto-hide the notification after 5 seconds (adjust as needed)
+      setTimeout(() => {
+        setNotification(null);
+      }, 5000);
   };
   return (
     <div>
@@ -92,6 +101,12 @@ export const Contact = (props) => {
                   Send Message
                 </button>
               </form>
+              {/* Notification Element */}
+              {notification && (
+                <div className={`notification ${notification.type}`}>
+                  {notification.message}
+                </div>
+              )}
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
@@ -146,6 +161,7 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
+      
       <div id="footer">
         <div className="container text-center">
           <p>

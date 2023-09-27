@@ -491,6 +491,24 @@ label {
 #footer a:hover {
   border-bottom: 2px solid #D76A03;
 }
+.notification {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.notification.success {
+  background-color: green;
+}
+
+.notification.error {
+  background-color: red;
+}
+
 
 @media (max-width: 768px) {
   #about img {
