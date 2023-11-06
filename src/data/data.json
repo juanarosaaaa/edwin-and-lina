@@ -7,7 +7,7 @@
     "paragraph": "At Edwin and Lina Poultry Farm, we are passionate about poultry. With decades of experience, we've honed our craft to provide top-quality, healthy poultry products. Our commitment to ethical farming practices ensures the well-being of our birds and the exceptional taste of our offerings.",
     "Why": [
       "Maintain high standards",
-      "Birds are raised with care,",
+      "Birds are raised with care",
       "Support local communities",
       "Embrace eco-friendly practices"
     ],
@@ -20,7 +20,7 @@
   },
   "Services": [
     {
-      "icon": "fa fa-wordpress",
+      "icon": "fa fa-truck",
       "name": "Egg Delivery Services",
       "text": "Enjoy the convenience of fresh, farm-to-table eggs delivered right to your doorstep. Our efficient delivery ensures you have access to the finest quality eggs without leaving your home."
     },
@@ -45,17 +45,17 @@
   },
   "Highlights": [
     {
-      "icon": "fa fa-comments-o",
+      "icon": "fa fa-star",
       "title": "Quality Eggs",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     },
     {
-      "icon": "fa fa-bullhorn",
+      "icon": "fa fa-truck",
       "title": "Deliver Eggs at Your Doorstep",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     },
     {
-      "icon": "fa fa-group",
+      "icon": "fa fa-thumbs-o-up",
       "title": "Bulk Delivery",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     },
