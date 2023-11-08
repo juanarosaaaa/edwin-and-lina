@@ -64,5 +64,25 @@
       "title": "Lorem ipsum",
       "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
     }
+  ],
+  "Milestone": [
+    {
+      "title": "First Event",
+      "description": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
+      "year": "2000",
+      "icon": "fa fa-clock-o"
+    },
+    {
+      "title": "Second Event",
+      "description": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
+      "year": "2005",
+      "icon": "fa fa-history"
+    },
+    {
+      "title": "Third Event",
+      "description": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
+      "year": "2010",
+      "icon": "fa fa-flag"
+    }
   ]
 }
