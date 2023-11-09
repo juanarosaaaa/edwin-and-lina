@@ -1,25 +1,40 @@
 import React, { useRef } from 'react';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
+import { useAlert } from 'react-alert';
+
 
 const initialState = {
-  name: "",
-  email: "",
+  user_name: "",
+  user_email: "",
   message: "",
 };
 
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  const [{ user_name, user_email, message }, setState] = useState(initialState);
+  const alert = useAlert();
   const [notification, setNotification] = useState(null);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setNotification(null);
+    }, 5000);
+  
+    return () => clearTimeout(timeoutId);
+  }, [notification]);
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
-  const clearState = () => setState({ ...initialState });
-
+  
+  const clearState = () => {
+    setState(initialState);
+  };
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
+
     emailjs
       .sendForm("service_ttmnvhb", "template_k5keic6", e.target, "AAzCnX-gqEst63LUE")
       .then(
@@ -27,14 +42,15 @@ export const Contact = (props) => {
           console.log(result.text);
           clearState();
           setNotification({ message: "Email sent successfully!", type: "success" });
+          alert.success("Email sent successfully!");
         },
         (error) => {
           console.log(error.text);
           setNotification({ message: "Error sending email. Please try again.", type: "error" });
+          alert.error("Error sending email. Please try again.");
         }
       );
-
-      // Auto-hide the notification after 5 seconds (adjust as needed)
+      
       setTimeout(() => {
         setNotification(null);
       }, 5000);
@@ -52,7 +68,7 @@ export const Contact = (props) => {
                   get back to you as soon as possible.
                 </p>
               </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+              <form name="sentMessage" onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -63,6 +79,7 @@ export const Contact = (props) => {
                         className="form-control"
                         placeholder="Name"
                         required
+                        value={user_name}
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
@@ -77,6 +94,7 @@ export const Contact = (props) => {
                         className="form-control"
                         placeholder="Email"
                         required
+                        value={user_email}
                         onChange={handleChange}
                       />
                       <p className="help-block text-danger"></p>
@@ -91,6 +109,7 @@ export const Contact = (props) => {
                     rows="4"
                     placeholder="Message"
                     required
+                    value={message}
                     onChange={handleChange}
                   ></textarea>
                   <p className="help-block text-danger"></p>
