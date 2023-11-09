@@ -1,13 +1,22 @@
 import React from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import { Icon } from "leaflet";
+import L from "leaflet";
 
 export const About = (props) => {
+
+  const customIcon = new L.Icon({
+    iconUrl: "/img/placeholder.png",
+    iconSize:[38,38]
+  });
+
   return (
     <div id="about">
       <div className="container">
-        <div className="row">
+        <div className="row mb-1">
           <div className="col-xs-12 col-md-6">
-            {" "}
-            <img src="img/about.jpg" className="img-responsive" alt="" />{" "}
+            <img src="img/about.jpg" className="img-responsive" alt="" />
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
@@ -35,6 +44,27 @@ export const About = (props) => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        {/* Add the MapContainer here */}
+        <div className="row">
+          <div className="col-xs-12">
+            <MapContainer
+              style={{ height: "300px", width: "100%" }}
+              center={[13.870985, 121.082772]}
+              zoom={13}
+            >
+              <TileLayer
+                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              />
+              {/* Add Marker */}
+              <Marker position={[13.870985, 121.082772]} icon={customIcon}>
+                <Popup>
+                  <h3>Edwin and Lina Farm</h3>
+                </Popup>
+              </Marker>
+            </MapContainer>
           </div>
         </div>
       </div>
