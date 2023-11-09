@@ -1,4 +1,5 @@
 import React from "react";
+import { Card } from "react-bootstrap";
 
 export const Highlights = (props) => {
   return (
@@ -10,11 +11,14 @@ export const Highlights = (props) => {
         <div className="row">
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.title}-${i}`} className="col-xs-6 col-md-3">
-                  {" "}
-                  <i className={d.icon}></i>
-                  <h3>{d.title}</h3>
-                  <p>{d.text}</p>
+                <div key={`${d.title}-${i}`} className="col-md-4">
+                  <Card className="horizontal-card">
+                    <Card.Img variant="top" src={d.img} alt={d.title} />
+                    <Card.Body>
+                      <Card.Title>{d.title}</Card.Title>
+                      <Card.Text>{d.text}</Card.Text>
+                    </Card.Body>
+                  </Card>
                 </div>
               ))
             : "Loading..."}

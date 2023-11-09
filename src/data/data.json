@@ -20,19 +20,19 @@
   },
   "Services": [
     {
-      "icon": "fa fa-truck",
+      "icon": "./img/delivery.svg",
       "name": "Egg Delivery Services",
-      "text": "Enjoy the convenience of fresh, farm-to-table eggs delivered right to your doorstep. Our efficient delivery ensures you have access to the finest quality eggs without leaving your home."
+      "text": "Enjoy the convenience of fresh, farm-to-table eggs delivered right to your place. Our efficient delivery ensures you have access to the finest quality eggs without leaving your place."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Egg Grading and Packaging",
-      "text": "We meticulously grade and package our eggs, meeting the highest industry standards for quality and safety. Each egg is handled with care to guarantee you receive only the best."
+      "icon": "./img/pig.svg",
+      "name": "Piggery Services",
+      "text": "Whether you're a seasoned farmer or just starting, our expert team ensures the health and well-being of your pigs. From breeding to nutrition management, we've got your piggery needs covered."
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Bulk Egg Supply for Businesses",
-      "text": "Catering to restaurants, bakeries, and other businesses, we provide bulk egg supply services. Our commitment to consistent quality ensures your culinary creations shine."
+      "icon": "./img/build.svg",
+      "name": "Poultry Cage and Building Solutions",
+      "text": "We specialize in designing and constructing poultry cages and buildings that prioritize the comfort and safety of your feathered friends. Give your poultry a home that enhances their growth and maximizes your farm's efficiency!"
     }
   ],
   "Contact": {
@@ -45,44 +45,46 @@
   },
   "Highlights": [
     {
-      "icon": "fa fa-star",
+      "img": "./img/about.jpg",
       "title": "Quality Eggs",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "text": "Dive into a commitment to excellence as Edwin and Lina Poultry Farm takes center stage in ensuring top-tier egg quality. With a hands-on approach, they personally manufacture their feeds, armed with an intricate understanding of the nutritional nuances essential for producing eggs of unparalleled quality."
     },
     {
-      "icon": "fa fa-truck",
-      "title": "Deliver Eggs at Your Doorstep",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "img": "./img/sanjose.jpg",
+      "title": "Located at Egg Basket of the Philippines",
+      "text": "Nestled in the heart of San Jose, Batangas, known as the egg basket of the Philippines, the Edwin and Lina farm stands as a key contributor to the region's egg production. San Jose proudly supplies 30% of the country's eggs, with approximately 10% of the municipality's businesses thriving in the egg industry."
     },
     {
-      "icon": "fa fa-thumbs-o-up",
-      "title": "Bulk Delivery",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-    },
-    {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "img": "./img/ecofriendly.jpg",
+      "title": "An Eco-friendly Farm",
+      "text": "We have implemented a state-of-the-art biogas system that converts organic waste from our farm into renewable energy. This not only reduces our reliance on fossil fuels but also minimizes our carbon footprint, contributing to a cleaner environment."
     }
   ],
   "Milestone": [
     {
-      "title": "First Event",
-      "description": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
-      "year": "2000",
-      "icon": "fa fa-clock-o"
+      "title": "Seeds of Swineherd Success",
+      "description": "Following the union of Mr. Edwin and Lina, they embarked on a journey as swineherds, tending to a herd of 20 pigs owned by Mr. Edwin's mother.",
+      "year": "1992"
     },
     {
-      "title": "Second Event",
-      "description": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
-      "year": "2005",
-      "icon": "fa fa-history"
+      "title": "Expanding the Livestock Legacy",
+      "description": "Taking control, they nurtured their own 40 pigs and 1100 chickens, witnessing the roots of their thriving enterprise.",
+      "year": "1994"
     },
     {
-      "title": "Third Event",
-      "description": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.",
-      "year": "2010",
-      "icon": "fa fa-flag"
+      "title": "From Local to Regional",
+      "description": "Diversifying, they introduced egg delivery services, initially within Batangas and later expanding to Cavite.",
+      "year": "1996"
+    },
+    {
+      "title": "Nationwide Egg Suppliers",
+      "description": "The farm's growth saw their egg delivery venture spreading across the Philippines, establishing them as prominent egg suppliers in Samar, Bicol, and Mindoro.",
+      "year": "2019"
+    },
+    {
+      "title": "Branching Out in Mindoro",
+      "description": "Continuing their expansion, they establish an outlet in Mindoro, solidifying their presence and impact in the agricultural landscape.",
+      "year": "2022"
     }
   ]
 }

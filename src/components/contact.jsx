@@ -1,17 +1,16 @@
+import React, { useRef } from 'react';
 import { useState } from "react";
 import emailjs from "emailjs-com";
-import React from "react";
 
 const initialState = {
   name: "",
   email: "",
   message: "",
 };
+
 export const Contact = (props) => {
   const [{ name, email, message }, setState] = useState(initialState);
   const [notification, setNotification] = useState(null);
-
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
@@ -22,7 +21,7 @@ export const Contact = (props) => {
     e.preventDefault();
     console.log(name, email, message);
     emailjs
-      .sendForm("service_4r5u2cv", "template_w968qmf", e.target, "dcbxe3jHiDskFAw-Y")
+      .sendForm("service_ttmnvhb", "template_k5keic6", e.target, "AAzCnX-gqEst63LUE")
       .then(
         (result) => {
           console.log(result.text);
@@ -60,7 +59,7 @@ export const Contact = (props) => {
                       <input
                         type="text"
                         id="name"
-                        name="name"
+                        name="user_name"
                         className="form-control"
                         placeholder="Name"
                         required
@@ -74,7 +73,7 @@ export const Contact = (props) => {
                       <input
                         type="email"
                         id="email"
-                        name="email"
+                        name="user_email"
                         className="form-control"
                         placeholder="Email"
                         required
