@@ -1,5 +1,6 @@
 /* eslint-env jquery */
 import React, { useEffect } from "react";
+import PropTypes from 'prop-types';
 
 export const Header = (props) => {
   const images = ["intro-bg-poultry.JPG", "image1.jpg", "image2.jpg", "image3.jpg", "image4.JPG", "image5.JPG"];
@@ -57,4 +58,12 @@ export const Header = (props) => {
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  data: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    paragraph: PropTypes.string.isRequired,
+    // Add more specific prop types as needed
+  }).isRequired,
 };

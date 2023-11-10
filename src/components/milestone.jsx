@@ -1,6 +1,7 @@
 import React from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import PropTypes from 'prop-types';
 
 export const Milestone = (props) => {
     return (
@@ -12,7 +13,7 @@ export const Milestone = (props) => {
           <div className="col-md-10 col-md-offset-1 ">
             <VerticalTimeline>
               {props.data
-                  ? props.data.map((d, i) => (
+                  ? props.data.map((d) => (
                       <VerticalTimelineElement
                           key={'${d.title}-${i}'}
                           className="vertical-timeline-element"
@@ -30,4 +31,14 @@ export const Milestone = (props) => {
         </div>
       </div>
     );
+  };
+
+  Milestone.propTypes = {
+    data: PropTypes.arrayOf(
+      PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+        year: PropTypes.string.isRequired,
+      })
+    ).isRequired,
   };

@@ -10,6 +10,7 @@
     "emailjs-com": "^2.6.4",
     "leaflet": "^1.9.4",
     "nodemailer": "^6.9.5",
+    "prop-types": "^15.8.1",
     "react": "^17.0.1",
     "react-alert": "^7.0.3",
     "react-alert-template-basic": "^1.0.2",

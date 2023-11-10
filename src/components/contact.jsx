@@ -1,8 +1,7 @@
-import React, { useRef } from 'react';
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import { useAlert } from 'react-alert';
-
+import PropTypes from 'prop-types';
 
 const initialState = {
   user_name: "",
@@ -175,4 +174,13 @@ export const Contact = (props) => {
       </div>
     </div>
   );
+};
+
+Contact.propTypes = {
+  data: PropTypes.shape({
+    address: PropTypes.string.isRequired,
+    phone: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+    // Add more specific prop types as needed
+  }).isRequired,
 };

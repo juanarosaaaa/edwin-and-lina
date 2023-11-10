@@ -1,8 +1,8 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import { Icon } from "leaflet";
 import L from "leaflet";
+import PropTypes from 'prop-types';
 
 export const About = (props) => {
 
@@ -16,7 +16,7 @@ export const About = (props) => {
       <div className="container">
         <div className="row mb-1">
           <div className="col-xs-12 col-md-6">
-            <img src="img/about.jpg" className="img-responsive" alt="" />
+            <img src="img/family-hernandez.jpg" className="img-responsive" alt="" />
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
@@ -70,4 +70,12 @@ export const About = (props) => {
       </div>
     </div>
   );
+};
+
+About.propTypes = {
+  data: PropTypes.shape({
+    paragraph: PropTypes.string.isRequired,
+    Why: PropTypes.arrayOf(PropTypes.string).isRequired,
+    Why2: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
 };

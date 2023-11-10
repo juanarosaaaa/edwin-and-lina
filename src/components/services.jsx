@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 export const Services = (props) => {
   return (
@@ -30,4 +31,14 @@ export const Services = (props) => {
       </div>
     </div>
   );
+};
+
+Services.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      icon: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };

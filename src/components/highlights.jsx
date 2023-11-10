@@ -1,5 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import PropTypes from 'prop-types';
 
 export const Highlights = (props) => {
   return (
@@ -26,4 +27,13 @@ export const Highlights = (props) => {
       </div>
     </div>
   );
+};
+
+Highlights.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      // Define the structure of each item in the array
+      // Example: title, description, icon, etc.
+    })
+  ).isRequired,
 };
