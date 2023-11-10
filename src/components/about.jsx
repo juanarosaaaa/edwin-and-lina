@@ -14,7 +14,7 @@ export const About = (props) => {
   return (
     <div id="about">
       <div className="container">
-        <div className="row mb-1">
+        <div className="row mb-4 py-4">
           <div className="col-xs-12 col-md-6">
             <img src="img/family-hernandez.jpg" className="img-responsive" alt="" />
           </div>
